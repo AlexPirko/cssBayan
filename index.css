@@ -15,9 +15,17 @@
   width: 100%;
 }
 .mem-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+.mem-symbol {
+  
+}
+.mem-title {
   font-size: 1.5rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  display: block;
   padding: 15px;
   cursor: pointer;
 }
