@@ -4,10 +4,12 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
   margin: 1em 0;
+  font-size: 1.3em;
+  font-weight: 600;
 }
 .mem-list {
-  max-width: 60%;
-  margin: 2em auto;
+  max-width: 90%;
+  margin: 1em auto;
 }
 .mem-item {
   margin: 0.5em 0;
@@ -21,7 +23,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 1em;
-  cursor: pointer;
+  color:rgb(30, 30, 142);
 }
 .mem-symbol {
   color: black;
@@ -33,7 +35,7 @@
 .image {
   background: center / contain no-repeat;
   margin: 0 auto;
-  width: 80%;
+  width: 70%;
   opacity: 0;
 }
 .image-wrapper1 {
@@ -60,14 +62,8 @@ input:checked ~ label > .mem-symbol {
   transform: rotate(180deg);
   transition: 0.4s ease-in;
 }
-
-@media (min-width: 320px) {
-  body {
-    font-size: 1em;
-  }
-  .title {
-    font-size: 1.3em;
-  }
+input:checked ~ .mem-label, .mem-img-label {
+  color: black;
 }
 
 @media (min-width: 568px) {
@@ -77,23 +73,39 @@ input:checked ~ label > .mem-symbol {
   .title {
     font-size: 1.8em;
   }
+  .mem-list {
+    max-width: 80%;
+    margin: 1em auto;
+  } 
 }
 
-/* @media (min-width: 1080px) {
+@media (min-width: 1080px) {
   body {
-    font-size: 2.2em;
+    font-size: 1.8em;
   }
   .title {
-    font-size: 2.5em;
+    font-size: 2.0em;
   }
-  .mem-title {
-    color: blue;
+  .mem-list {
+    max-width: 70%;
+    margin: 2em auto;
+  } 
+  .mem-label, .mem-img-label {
+    cursor: pointer;
   }
-  .mem-label:hover ~ .mem-img-label {
-    max-height: 100vh;
+  .mem-symbol {
+    color: white;
   }
-  .mem-label:hover ~ .mem-title {
+  .mem-list:hover .mem-symbol {
     color: black;
   }
-} */
+  .mem-list:hover .mem-title {
+    color: black;
+  }
+  input:hover ~ label > .image {
+    opacity: 1;
+    aspect-ratio: 1 / 1;
+    transition: opacity 0.4s ease-in;
+  }
+}
 
