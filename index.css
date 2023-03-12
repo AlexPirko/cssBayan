@@ -33,25 +33,24 @@
   padding: 1em;
 }
 .image {
-  background: center / contain no-repeat;
   margin: 0 auto;
   width: 70%;
   opacity: 0;
 }
 .image-wrapper1 {
-  background-image: url("/img/mem1.png");
+  background: url("/img/mem1.png") center / contain no-repeat;
 }
 .image-wrapper2 {
-  background: center / contain no-repeat url("/img/mem2.png");
+  background: url("/img/mem2.png") center / contain no-repeat;
 }
 .image-wrapper3 {
-  background: center / contain no-repeat url("/img/mem3.png");
+  background: url("/img/mem3.png") center / contain no-repeat;
 }
 .image-wrapper4 {
-  background: center / contain no-repeat url("/img/mem4.png");
+  background: url("/img/mem4.png") center / contain no-repeat;
 }
 .image-wrapper5 {
-  background: center / contain no-repeat url("/img/mem5.png");
+  background: url("/img/mem5.png") center / contain no-repeat;
 }
 input:checked ~ label > .image {
   opacity: 1;
