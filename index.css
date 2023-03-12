@@ -38,19 +38,19 @@
   opacity: 0;
 }
 .image-wrapper1 {
-  background: url("/img/mem1.png") center / contain no-repeat;
+  background: url(./img/mem1.png) center / contain no-repeat;
 }
 .image-wrapper2 {
-  background: url("/img/mem2.png") center / contain no-repeat;
+  background: url(./img/mem2.png) center / contain no-repeat;
 }
 .image-wrapper3 {
-  background: url("/img/mem3.png") center / contain no-repeat;
+  background: url(./img/mem3.png) center / contain no-repeat;
 }
 .image-wrapper4 {
-  background: url("/img/mem4.png") center / contain no-repeat;
+  background: url(./img/mem4.png) center / contain no-repeat;
 }
 .image-wrapper5 {
-  background: url("/img/mem5.png") center / contain no-repeat;
+  background: url(./img/mem5.png) center / contain no-repeat;
 }
 input:checked ~ label > .image {
   opacity: 1;
